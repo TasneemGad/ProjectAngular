@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <label>User Name</label>
+    <input type="text" id="txtUserName" /><br /><br />
+    <label>Password</label>
+    <input type="password" id="txtPassword" /><br /><br />
+    <label>Confirm Password</label>
+    <input type="password" id="txtConfirmPassword" /><br /><br />
+    <input type="button" value="signUp" id="btn"/><br /><br />
+
+    <div id="msg"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                console.log("click")
+                $.ajax({
+                    url: "http://localhost:58842/api/Account/registration",
+                    type: 'POST',
+                    datatype: "json",
+                    data: {
+                        Name: $('#txtUserName').val(),
+                        Password: $('#txtPassword').val(),
+                        ConfirmPassword: $('#txtConfirmPassword').val()
+                    },
+
+                    success: function (result) {
+                        $("#msg").html("welcom" + $("txtUserName").val)
+                        window.location.href = 'Login.html';
+                    },
+                });
+            });
+        });</script>
+</body>
+</html>

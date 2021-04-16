@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Click of Button to Get Data</h3>
+    <hr />
+
+    <label>Go to Get All Carts</label>
+    <input type="button" value="OK" onclick="getAll()" /><br /><br />
+
+    <label>Go to Get Cart</label>
+    <input type="button" value="OK" onclick="getOne()" /><br /><br />
+
+    <label>Go to Delete Cart</label>
+    <input type="button" value="OK" onclick="Delete()" /><br /><br />
+
+    <label>Go to Update</label>
+    <input type="button" value="OK" onclick="Update()" /><br /><br />
+
+    <label>Go to make Cart</label>
+    <input type="button" value="OK" onclick="CreateCart()" /><br /><br />
+
+    <label>Go to Check if Exist</label>
+    <input type="button" value="OK" onclick="IsExist()" /><br /><br />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function getAll() {
+            window.location.href = 'GetAllCarts.html';
+        }
+
+        function getOne() {
+            window.location.href = 'Getcart.html';
+        }
+
+        function Delete() {
+            window.location.href = 'Delete.html';
+        }
+
+        function Update() {
+            window.location.href = 'Update.html';
+        }
+
+        function CreateCart() {
+            window.location.href = 'MakeCart.html';
+        }
+
+        function IsExist() {
+            window.location.href = 'CheckForExists.html';
+        }
+    </script>
+</body>
+</html>

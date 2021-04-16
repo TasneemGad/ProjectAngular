@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Update</h3>
+    <label>Number of Product:</label>
+    <input type="text" id="txtProdID" /><br /><br />
+    <input type="button" value="update" id="btn" /><br /><br />
+
+    <hr />
+    <label>ID:</label>
+    <input type="text" id="txtProdIDU" /><br /><br />
+    <label>productName:</label>
+    <input type="text" id="txtProdName" /> <br /><br />
+    <label>Quantities:</label>
+    <input type="text" id="txtProdQunt" /><br /><br />
+    <input type="button" value="OK" id="btn1" /><br /><br />
+    <div id="cart"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $.ajax({
+                    url: "http://localhost:58842/api/carts/" + $("#txtProdID").val(),
+                    type: "GET",
+                    datatype: "json",
+                    success: function (result) {
+                        //$("#txtProdIDU").val(result.)
+                        $("#txtProdName").val(result.productName)
+                        $("#txtProdQunt").val(result.Quantities)
+                    }
+                });
+            });
+
+            $("#btn1").click(function () {
+                console.log("click")
+                $.ajax({
+                    url: "http://localhost:58842/api/carts/" + $("#txtProdID").val(),
+                    type: "PUT",
+                    datatype: "json",
+                    data: {
+                        Id: $('#txtProdIDU').val(),
+                        productName: $('#txtProdName').val(),
+                        Quantities: $('#txtProdQunt').val()
+                    },
+                    success: function (result) {
+                        $("#cart").html("DONE!")
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

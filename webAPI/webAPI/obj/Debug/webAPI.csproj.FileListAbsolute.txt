@@ -1,0 +1,186 @@
+E:\ITI\Web API\Project\webAPI\webAPI\obj\Debug\webAPI.csprojAssemblyReference.cache
+E:\ITI\Web API\Project\webAPI\webAPI\obj\Debug\webAPI.csproj.CoreCompileInputs.cache
+E:\ITI\Web API\Project\webAPI\webAPI\bin\webAPI.dll.config
+E:\ITI\Web API\Project\webAPI\webAPI\bin\webAPI.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\webAPI.pdb
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\csc.exe
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\csc.exe.config
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\csc.rsp
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\csi.exe
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\csi.exe.config
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\csi.rsp
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.Managed.Core.targets
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.AppContext.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Console.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Globalization.Calendars.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.IO.Compression.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.IO.FileSystem.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Net.Http.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Net.Sockets.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.ValueTuple.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Xml.XPath.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\vbc.exe
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\vbc.exe.config
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\vbc.rsp
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe
+E:\ITI\Web API\Project\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\ITI\Web API\Project\webAPI\webAPI\bin\EntityFramework.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\EntityFramework.SqlServer.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.Core.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.Cors.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.Cookies.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Newtonsoft.Json.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Owin.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\System.Net.Http.Formatting.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\System.Web.Cors.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\System.Web.Http.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\System.Web.Http.Owin.dll
+E:\ITI\Web API\Project\webAPI\webAPI\bin\EntityFramework.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\EntityFramework.SqlServer.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.Core.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.Cors.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.Cookies.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Newtonsoft.Json.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\System.Net.Http.Formatting.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\System.Web.Http.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\System.Web.Http.Owin.xml
+E:\ITI\Web API\Project\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ITI\Web API\Project\webAPI\webAPI\obj\Debug\webAPI.csproj.CopyComplete
+E:\ITI\Web API\Project\webAPI\webAPI\obj\Debug\webAPI.dll
+E:\ITI\Web API\Project\webAPI\webAPI\obj\Debug\webAPI.pdb
+E:\ITI\Web API\Project\webAPI\webAPI\obj\Debug\webAPI.Migrations.project.resources
+E:\ITI\Web API\Project\webAPI\webAPI\obj\Debug\webAPI.csproj.GenerateResource.cache
+E:\ITI\Angular\Project\Project\webAPI\webAPI\obj\Debug\webAPI.csprojAssemblyReference.cache
+E:\ITI\Angular\Project\Project\webAPI\webAPI\obj\Debug\webAPI.csproj.CoreCompileInputs.cache
+E:\ITI\Angular\Project\Project\webAPI\webAPI\obj\Debug\webAPI.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\obj\Debug\webAPI.pdb
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\webAPI.dll.config
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\webAPI.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\webAPI.pdb
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\csc.exe
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\csc.exe.config
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\csc.rsp
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\csi.exe
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\csi.exe.config
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\csi.rsp
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.Managed.Core.targets
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.AppContext.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Console.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Globalization.Calendars.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.IO.Compression.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.IO.FileSystem.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Net.Http.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Net.Sockets.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.ValueTuple.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Xml.XPath.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\vbc.exe
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\vbc.exe.config
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\vbc.rsp
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\EntityFramework.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\EntityFramework.SqlServer.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.Core.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.Cors.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.Cookies.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Newtonsoft.Json.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Owin.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\System.Net.Http.Formatting.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\System.Web.Cors.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\System.Web.Http.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\System.Web.Http.Owin.dll
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\EntityFramework.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\EntityFramework.SqlServer.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.Core.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.Cors.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.Cookies.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Newtonsoft.Json.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\System.Net.Http.Formatting.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\System.Web.Http.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\System.Web.Http.Owin.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ITI\Angular\Project\Project\webAPI\webAPI\obj\Debug\webAPI.csproj.CopyComplete
+E:\ITI\Angular\Project\Project\webAPI\webAPI\obj\Debug\webAPI.Migrations.projectAng.resources
+E:\ITI\Angular\Project\Project\webAPI\webAPI\obj\Debug\webAPI.csproj.GenerateResource.cache

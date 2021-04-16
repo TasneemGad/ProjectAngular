@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Delete</h3>
+
+    <label>Number of Product:</label>
+    <input type="text" id="txtProdID" />
+    <input type="button" value="Delete" id="btn" />
+    <div id="del"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $.ajax({
+                    url: 'http://localhost:58842/api/carts/' + $("#txtProdID").val(),
+                    type: 'DELETE',
+                    datatype: "json",
+                    success: function () {
+                        $("#del").html("<br> DONE!");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

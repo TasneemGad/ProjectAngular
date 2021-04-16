@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Check Cart</h3>
+
+    <label>Number of Product:</label>
+    <input type="text" id="txtProdID" />
+    <input type="button" value="check!" id="btn" />
+    <div id="check"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $.ajax({
+                    url: 'http://localhost:58842/add/carts/cartExists/' + $("#txtProdID").val(),
+                    type: 'Get',
+                    datatype: "json",
+                    success: function (result) {
+                        $("#check").html(result.val);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

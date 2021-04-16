@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Get Cart</h3>
+
+    <label>Number of Product:</label>
+    <input type="text" id="txtProdID" />
+    <input type="button" value="Get Cart" id="btn" />
+    <div id="cart"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                console.log("click")
+                $.ajax({
+                    url: "http://localhost:58842/api/carts/" + $("#txtProdID").val(),
+                    type: "GET",
+                    datatype: "json",
+                    success: function (result) {
+                        $("#cart").html(
+                            "<br> productName: " + result.productName + " <br/> Quantities: " + result.Quantities);
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

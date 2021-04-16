@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Get Carts</h3>
+
+    <input type="button" value="Get All " id="btn" /><br /><br />
+    <table border="1" id="table">
+        <thead>
+            <tr>
+                <td>productName</td>
+                <td>Quantities</td>
+            </tr>
+        </thead>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $.ajax({
+                    url: "http://localhost:58842/api/carts",
+                    type: "GET",
+                    datatype: "json",
+                    success: function (result) {
+                        console.log("entered")
+                        $("#table").find('tbody').empty();
+                        $.each(result, function (key, value) {
+                            $("#table").append("<tbody><tr><td>" + value.productName + "</td ><td>" + value.Quantities + "</td></tr></tbody>")
+                        })
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
