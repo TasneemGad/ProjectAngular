@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -12,13 +12,14 @@ using webAPI.Models;
 
 namespace webAPI.Controller
 {
-    [Authorize]
+    //[Authorize]
     public class cartsController : ApiController
     {
         private context db = new context();
 
-        // GET: api/carts
-        public IQueryable<cart> Getcart()
+    // GET: api/carts
+    //[Route("GetAllcarts")]
+    public IQueryable<cart> Getcart()
         {
             return db.cart;
         }

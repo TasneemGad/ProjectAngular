@@ -3,7 +3,7 @@ namespace webAPI.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class projectAng : DbMigration
+    public partial class shop : DbMigration
     {
         public override void Up()
         {

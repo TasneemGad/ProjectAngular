@@ -1,1 +1,35 @@
-<p>cart works!</p>
+
+
+
+
+
+<table class="table" style="border-width: 8px;">
+<thead>
+<tr style="background-color: rgb(54, 54, 5); color: white;">
+<th> Id </th>
+<th> productName </th>
+<th>Image</th>
+<th>Quantities</th>
+<th>price</th>
+
+
+
+</tr>
+</thead>
+
+
+
+<tbody *ngFor="let pro of cartList">
+<tr>
+<td style="background-color: peachpuff;">{{pro.Id}}</td>
+<td style="background-color: lightslategray;">{{pro.productName}}</td>
+<td style="background-color: mediumaquamarine;">{{pro.Image}}</td>
+<td style="background-color: mediumaquamarine;">{{pro.Quantities}}</td>
+<td style="background-color: mediumaquamarine;">{{pro.price}}</td>
+
+</tr>
+</tbody>
+</table>
+
+
+

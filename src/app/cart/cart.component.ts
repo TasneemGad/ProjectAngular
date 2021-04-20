@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../Services/cart.service';
+import { ICart } from '../Shared_Interfaces/ICart';
 
 @Component({
   selector: 'app-cart',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-
-  constructor() { }
+cartList:ICart[]=[]
+  constructor(private services : CartService) { }
 
   ngOnInit(): void {
+    this.getAllCart()
+  }
+  getAllCart()
+  {
+    console.log("ok")
+   this.services.getCart().subscribe(data=>{this.cartList=data})
   }
 
 }

@@ -133,9 +133,9 @@
   <ItemGroup>
     <Compile Include="Controller\AccountController.cs" />
     <Compile Include="Controller\cartsController.cs" />
-    <Compile Include="Migrations\202104160042007_projectAng.cs" />
-    <Compile Include="Migrations\202104160042007_projectAng.Designer.cs">
-      <DependentUpon>202104160042007_projectAng.cs</DependentUpon>
+    <Compile Include="Migrations\202104200000468_shop.cs" />
+    <Compile Include="Migrations\202104200000468_shop.Designer.cs">
+      <DependentUpon>202104200000468_shop.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\context.cs" />
@@ -158,8 +158,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202104160042007_projectAng.resx">
-      <DependentUpon>202104160042007_projectAng.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202104200000468_shop.resx">
+      <DependentUpon>202104200000468_shop.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
