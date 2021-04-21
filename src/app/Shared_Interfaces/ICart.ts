@@ -1,8 +1,17 @@
+// export interface ICart
+// {
+//     Id:number
+//     productName:string
+//     Image:string
+//     Quantities:number
+//     price:number
+// }
+
 export interface ICart
 {
-    Id:number
-    productName:string
+    ID:number
+    Name:string
+    Description:string
     Image:string
-    Quantities:number
-    price:number
+    Price:number
 }

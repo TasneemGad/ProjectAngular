@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -14,12 +14,10 @@ namespace webAPI.Models
         public string Image { get; set; }
         public int Price { get; set; }
 
-
-        public int ProductDetailsID { get; set; }
-
-        [ForeignKey("ProductDetailsID")]
-        public virtual ProductDedails ProductDedails { get; set; }
+    //public int ProductDetailsID { get; set; }
+    //[ForeignKey("ProductDetailsID")]
+    public virtual ProductDedails ProductDedails { get; set; }
 
 
-    }
+  }
 }

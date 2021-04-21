@@ -11,21 +11,15 @@
 <th>Image</th>
 <th>Quantities</th>
 <th>price</th>
-
-
-
-</tr>
-</thead>
-
-
+</tr></thead>
 
 <tbody *ngFor="let pro of cartList">
 <tr>
-<td style="background-color: peachpuff;">{{pro.Id}}</td>
-<td style="background-color: lightslategray;">{{pro.productName}}</td>
+<td style="background-color: peachpuff;">{{pro.ID}}</td>
+<td style="background-color: lightslategray;">{{pro.Name}}</td>
 <td style="background-color: mediumaquamarine;">{{pro.Image}}</td>
-<td style="background-color: mediumaquamarine;">{{pro.Quantities}}</td>
-<td style="background-color: mediumaquamarine;">{{pro.price}}</td>
+<td style="background-color: mediumaquamarine;">{{pro.Description}}</td>
+<td style="background-color: mediumaquamarine;">{{pro.Price}}</td>
 
 </tr>
 </tbody>

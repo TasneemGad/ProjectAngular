@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -13,11 +13,11 @@ namespace webAPI.Models
         {
 
         }
-        public virtual DbSet<cart> cart { get; set; }
-        public virtual DbSet<Order> Orders { get; set; }
+        //public virtual DbSet<cart> cart { get; set; }
+        //public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<ProductDedails> ProductDedails { get; set; }
-        public virtual DbSet<payment> Payments { get; set; }
+        //public virtual DbSet<payment> Payments { get; set; }
 
     }
 }
