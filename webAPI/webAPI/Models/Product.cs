@@ -16,7 +16,7 @@ namespace webAPI.Models
 
     //public int ProductDetailsID { get; set; }
     //[ForeignKey("ProductDetailsID")]
-    public virtual ProductDedails ProductDedails { get; set; }
+   // public virtual ProductDedails ProductDedails { get; set; }
 
 
   }

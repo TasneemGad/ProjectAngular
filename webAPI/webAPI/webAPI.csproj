@@ -137,6 +137,10 @@
     <Compile Include="Migrations\202104210034175_p.Designer.cs">
       <DependentUpon>202104210034175_p.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104212351232_p1.cs" />
+    <Compile Include="Migrations\202104212351232_p1.Designer.cs">
+      <DependentUpon>202104212351232_p1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\context.cs" />
     <Compile Include="Models\cart.cs" />
@@ -160,6 +164,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202104210034175_p.resx">
       <DependentUpon>202104210034175_p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104212351232_p1.resx">
+      <DependentUpon>202104212351232_p1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
