@@ -14,7 +14,8 @@ import { CartComponent } from './cart/cart.component';
 import { PaymentComponent } from './payment/payment.component';
 import { OrderComponent } from './order/order.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import{HttpClientModule} from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
+/*  import { DashboardComponent } from './dashboard/dashboard.component'; */ 
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import{HttpClientModule} from '@angular/common/http';
     FooterComponent,
     CartComponent,
     PaymentComponent,
-    OrderComponent
+    OrderComponent,
+/*     DashboardComponent */
   ],
   imports: [
     BrowserModule,

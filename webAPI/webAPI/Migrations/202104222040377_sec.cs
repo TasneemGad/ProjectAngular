@@ -3,7 +3,7 @@ namespace webAPI.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class p : DbMigration
+    public partial class sec : DbMigration
     {
         public override void Up()
         {
@@ -11,15 +11,16 @@ namespace webAPI.Migrations
                 "dbo.ProductDedails",
                 c => new
                     {
-                        ID = c.Int(nullable: false),
+                        ID = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         Description = c.String(),
                         Image = c.String(),
                         Price = c.Int(nullable: false),
+                        Product_ID = c.Int(),
                     })
                 .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.Products", t => t.ID)
-                .Index(t => t.ID);
+                .ForeignKey("dbo.Products", t => t.Product_ID)
+                .Index(t => t.Product_ID);
             
             CreateTable(
                 "dbo.Products",
@@ -109,14 +110,14 @@ namespace webAPI.Migrations
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
-            DropForeignKey("dbo.ProductDedails", "ID", "dbo.Products");
+            DropForeignKey("dbo.ProductDedails", "Product_ID", "dbo.Products");
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
-            DropIndex("dbo.ProductDedails", new[] { "ID" });
+            DropIndex("dbo.ProductDedails", new[] { "Product_ID" });
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");

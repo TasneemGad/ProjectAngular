@@ -133,13 +133,9 @@
   <ItemGroup>
     <Compile Include="Controller\AccountController.cs" />
     <Compile Include="Controller\ProductsController.cs" />
-    <Compile Include="Migrations\202104210034175_p.cs" />
-    <Compile Include="Migrations\202104210034175_p.Designer.cs">
-      <DependentUpon>202104210034175_p.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104212351232_p1.cs" />
-    <Compile Include="Migrations\202104212351232_p1.Designer.cs">
-      <DependentUpon>202104212351232_p1.cs</DependentUpon>
+    <Compile Include="Migrations\202104222040377_sec.cs" />
+    <Compile Include="Migrations\202104222040377_sec.Designer.cs">
+      <DependentUpon>202104222040377_sec.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\context.cs" />
@@ -162,11 +158,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202104210034175_p.resx">
-      <DependentUpon>202104210034175_p.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104212351232_p1.resx">
-      <DependentUpon>202104212351232_p1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202104222040377_sec.resx">
+      <DependentUpon>202104222040377_sec.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

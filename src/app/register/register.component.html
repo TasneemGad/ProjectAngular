@@ -3,12 +3,13 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <div class="container register-form">
-            <div class="form">
+            <div class="form"  >
                 <div class="note">
                     <p>Registration Form</p>
                 </div>
-
-                <div class="form-content" [formGroup]="registerForm">
+               <!--  (ngSubmit)="onFormSubmit(registerForm.value)"  -->
+               <!-- [formGroup]="registerForm" --> 
+                <div class="form-content" [formGroup]="registerForm"  (ngSubmit)="onFormSubmit()"  >
                             <div class="form-group">
                                 <label>User Name</label>
                                 <input formControlName="userName"  type="text" class="form-control" placeholder="Your Name *" value=""/>
@@ -28,11 +29,10 @@
                                 <label>Confirm Password</label>
                                 <input formControlName="confirmPassword" [class.is-invalid]="registerForm.errors?.misMatch" type="text" class="form-control" placeholder="Confirm Password *" value=""/>
                                 <small class="text-danger" *ngIf="registerForm.errors?.misMatch">Password and confirm password not match</small>
-                                <div *ngIf="confirmPassword.invalid && confirmPassword.touched">
+                               <div *ngIf="confirmPassword.invalid && confirmPassword.touched">
                                     <small class="text-danger" *ngIf="confirmPassword.errors.required">confirmPassword is required</small>
-                                </div>
+                                </div> 
                             </div>
-                    <button type="button" class="btnSubmit">Registration</button>
+                    <button type="submit" class="btnSubmit">Registration</button>
                 </div>
             </div>
-        </div>
