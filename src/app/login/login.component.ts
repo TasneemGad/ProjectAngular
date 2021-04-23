@@ -13,8 +13,9 @@ import { LoginService } from '../Services/Login.service';
 export class LoginComponent implements OnInit {
 
     LoginForm=this.fb.group({
-    userName :['',[Validators.required]],
-    password:['',[Validators.required,Validators.minLength(6)]]
+    Name :['',[Validators.required]],
+    password:['',[Validators.required,Validators.minLength(6)]],
+    grant_type:['']
     }) 
 
     model : any={};    
@@ -26,15 +27,16 @@ export class LoginComponent implements OnInit {
     sessionStorage.removeItem('UserName');    
     sessionStorage.clear();    
   } 
-  login(){    
-    debugger;    
+  login(y:any){ 
+    console.log("login");   
+  /*   debugger;  */   
     this.LoginService.Login(this.model).subscribe(    
       data => {    
-        debugger;    
+   /*      debugger;   */  
         if(data.Status=="Success")    
         {       
-          this.router.navigate(['/Dashboard']);    
-          debugger;    
+          this.router.navigate(['/Home']);    
+        /*   debugger; */    
         }    
         else{    
           this.errorMessage = data.Message;    
@@ -45,9 +47,9 @@ export class LoginComponent implements OnInit {
       });    
   };
 
-   get userName ()
+   get Name ()
   {
-    return this.LoginForm.get('userName');
+    return this.LoginForm.get('Name');
   }
   
   get password ()

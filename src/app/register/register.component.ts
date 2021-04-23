@@ -20,14 +20,14 @@ export class RegisterComponent implements OnInit {
   ngOnInit(){
   
     this.registerForm =this.fb.group({
-    userName :['',[Validators.required]],
+    Name :['',[Validators.required]],
     password:['',[Validators.required,Validators.minLength(6)]],
     confirmPassword:['',[Validators.required]]
   },{validators:[ConfirmPasswordValidator]});
   
   }
- 
-  onFormSubmit()    
+  
+  onFormSubmit(x:any)    
   {    
     const user = this.registerForm.value;    
     this.Createemployee(user);    
@@ -38,14 +38,15 @@ export class RegisterComponent implements OnInit {
     ()=>    
     {    
       this.data = true;    
-      this.massage = 'Data saved Successfully';    
+      this.massage = 'Data saved Successfully';  
+      console.log ("Data saved Successfully") ;
       this.registerForm.reset();    
     });    
   } 
  
-  get userName ()
+  get Name ()
   {
-    return this.registerForm.get('userName');
+    return this.registerForm.get('Name');
   }
   
   get password ()

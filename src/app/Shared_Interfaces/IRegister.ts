@@ -1,6 +1,6 @@
   export interface IRegister
  {
-    userName:string
+    Name:string
     password:string 
     confirmPassword:string
 } 

@@ -9,24 +9,28 @@ import { IRegister } from '../Shared_Interfaces/IRegister';
   providedIn: 'root'  
 })  
 export class LoginService {  
-  Url :string;  
+  UrlReg :string; 
+  UrlLog :string;
   token : string='';  
   header : any;  
   constructor(private http : HttpClient) {   
 
-    this.Url = "http://localhost:4200/api/Account"; 
+    this.UrlReg = "http://localhost:58842/api/Account"; 
+    this.UrlLog = "http://localhost:58842/Login/";
 
     const headerSettings: {[name: string]: string | string[]; } = {};  
     this.header = new HttpHeaders(headerSettings);  
   }  
-  Login(model : any){  
-    debugger;  
-     var a =this.Url+'UserLogin';  
-   return this.http.post<any>(this.Url+'UserLogin',model,{ headers: this.header});  
-  }  
+   Login(model : any){ 
+    console.log("login"); 
+   /*  debugger;  */   
+   return this.http.post<any>(this.UrlLog,model,{ headers: this.header});  
+ 
+  }   
    CreateUser(register:IRegister)  
-   {  
+   { 
+    console.log("Saved"); 
     const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };  
-    return this.http.post<IRegister[]>(this.Url + '/createcontact/', register, httpOptions)  
+    return this.http.post<IRegister[]>(this.UrlReg+'/registration/' , register, httpOptions)  
    }  
 }  

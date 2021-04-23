@@ -7,11 +7,11 @@
                 <div class="note">
                     <p>Login Form</p>
                 </div>
-
-                <div class="form-content" [formGroup]="LoginForm"  (ngSubmit)="login()" #f="ngForm">
+                <form [formGroup]="LoginForm" (ngSubmit)="login(LoginForm.value)"> 
+              <!--   <div class="form-content" [formGroup]="LoginForm"  (ngSubmit)="login(f)" #f> -->
                             <div class="form-group">
                                 <label>User Name</label>
-                                <input formControlName="userName"  type="text" class="form-control" placeholder="Your Name *" value=""/>
+                                <input formControlName="Name"  type="text" class="form-control" placeholder="Your Name *" value=""/>
                              <!--    <div *ngIf="userName.invalid && userName.touched">
                                     <small class="text-danger" *ngIf="userName.errors.required">User Name is required</small>
                                 </div> -->
@@ -28,9 +28,11 @@
                                 <p style="color:#E92626;font-size:20px;font-weight:normal" Class="success" >  
                                   {{errorMessage}}  
                                 </p>  
-                              </div>  
+                              </div> 
+                              
+                              <input  type="text" value="password" formControlName="grant_type"/> 
                     <button type="submit" class="btnSubmit">Login</button>
-                </div>
-            </div>
+                </form>
+             </div>
         </div>
 <!-- <app-dashboard></app-dashboard> -->
