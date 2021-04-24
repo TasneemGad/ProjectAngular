@@ -11,13 +11,14 @@ export class CartComponent implements OnInit {
 cartList:ICart[]=[]
   constructor(private services : CartService) { }
 
-  ngOnInit(): void {
-    this.getAllCart()
-  }
+  
   getAllCart()
   {
     console.log("ok")
-   this.services.getCart().subscribe(data=>{this.cartList=data})
+   return this.services.getProduct().subscribe(data=>{this.cartList=data})
+  }
+  ngOnInit(): void {
+    this.getAllCart();
   }
 
 }

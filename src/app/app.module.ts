@@ -13,8 +13,11 @@ import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
 import { PaymentComponent } from './payment/payment.component';
 import { OrderComponent } from './order/order.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import{HttpClientModule} from '@angular/common/http';
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+import { AdminProductComponent } from './admin/admin-product/admin-product.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +31,18 @@ import{HttpClientModule} from '@angular/common/http';
     FooterComponent,
     CartComponent,
     PaymentComponent,
-    OrderComponent
+    OrderComponent,
+    AdminProductComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbPaginationModule,
+    NgbAlertModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

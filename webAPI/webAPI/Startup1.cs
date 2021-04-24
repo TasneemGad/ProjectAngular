@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
 using Microsoft.Owin.Cors;
@@ -38,7 +38,7 @@ namespace webAPI
                 new { id = RouteParameter.Optional });
             config.Routes.MapHttpRoute(
                 "Addetion", "add/{controller}/{action}/{id}",
-                new { id = RouteParameter.Optional });
+                new { id = RouteParameter.Optional , action = "DefaultAction" });
             app.UseWebApi(config);
         }
     }

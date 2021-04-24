@@ -1,5 +1,7 @@
-﻿using System;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
@@ -13,12 +15,10 @@ namespace webAPI.Models
         public string Description { get; set; }
         public string Image { get; set; }
         public int Price { get; set; }
-
-
-        public int ProductDetailsID { get; set; }
-
-        [ForeignKey("ProductDetailsID")]
+        public int Quantity { get; set; }
+       [JsonIgnore]
         public virtual ProductDedails ProductDedails { get; set; }
+
 
 
     }

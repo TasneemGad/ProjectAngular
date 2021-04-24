@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -12,46 +12,44 @@ using webAPI.Models;
 
 namespace webAPI.Controller
 {
-    //[Authorize]
-    public class cartsController : ApiController
+    public class ProductsController : ApiController
     {
         private context db = new context();
 
-    // GET: api/carts
-    //[Route("GetAllcarts")]
-    public IQueryable<cart> Getcart()
+        // GET: api/Products
+        public IQueryable<Product> GetProducts()
         {
-            return db.cart;
+            return db.Products;
         }
 
-        // GET: api/carts/5
-        [ResponseType(typeof(cart))]
-        public IHttpActionResult Getcart(int id)
+        // GET: api/Products/5
+        [ResponseType(typeof(Product))]
+        public IHttpActionResult GetProduct(int id)
         {
-            cart cart = db.cart.Find(id);
-            if (cart == null)
+            Product product = db.Products.Find(id);
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return Ok(cart);
+            return Ok(product);
         }
 
-        // PUT: api/carts/5
+        // PUT: api/Products/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult Putcart(int id, cart cart)
+        public IHttpActionResult PutProduct(int id, Product product)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != cart.Id)
+            if (id != product.ID)
             {
                 return BadRequest();
             }
 
-            db.Entry(cart).State = EntityState.Modified;
+            db.Entry(product).State = EntityState.Modified;
 
             try
             {
@@ -59,7 +57,7 @@ namespace webAPI.Controller
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!cartExists(id))
+                if (!ProductExists(id))
                 {
                     return NotFound();
                 }
@@ -72,35 +70,35 @@ namespace webAPI.Controller
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/carts
-        [ResponseType(typeof(cart))]
-        public IHttpActionResult Postcart(cart cart)
+        // POST: api/Products
+        [ResponseType(typeof(Product))]
+        public IHttpActionResult PostProduct(Product product)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.cart.Add(cart);
+            db.Products.Add(product);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = cart.Id }, cart);
+            return CreatedAtRoute("DefaultApi", new { id = product.ID }, product);
         }
 
-        // DELETE: api/carts/5
-        [ResponseType(typeof(cart))]
-        public IHttpActionResult Deletecart(int id)
+        // DELETE: api/Products/5
+        [ResponseType(typeof(Product))]
+        public IHttpActionResult DeleteProduct(int id)
         {
-            cart cart = db.cart.Find(id);
-            if (cart == null)
+            Product product = db.Products.Find(id);
+            if (product == null)
             {
                 return NotFound();
             }
 
-            db.cart.Remove(cart);
+            db.Products.Remove(product);
             db.SaveChanges();
 
-            return Ok(cart);
+            return Ok(product);
         }
 
         protected override void Dispose(bool disposing)
@@ -112,9 +110,9 @@ namespace webAPI.Controller
             base.Dispose(disposing);
         }
 
-        private bool cartExists(int id)
+        private bool ProductExists(int id)
         {
-            return db.cart.Count(e => e.Id == id) > 0;
+            return db.Products.Count(e => e.ID == id) > 0;
         }
     }
 }

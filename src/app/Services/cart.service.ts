@@ -8,15 +8,26 @@ import {catchError} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class CartService {
-Geturl:string="http://localhost:58842/api/carts"
+Geturl="http://localhost:6539/api"
   constructor(private httpGet : HttpClient) { }
-  getCart():Observable<ICart[]>
+
+  getProduct():Observable<ICart[]>
   {
     console.log("Done")
-   return this.httpGet.get<ICart[]>(this.Geturl).pipe(catchError((err)=>{
-     return throwError(err.message || 'error Happen')
-   }))
+   return this.httpGet.get<ICart[]>(this.Geturl+'/Products')
+  
+    
+  }
+  postProduct(val:ICart):Observable<ICart[]>
+  {
+    console.log("Done")
+   return this.httpGet.post<ICart[]>(this.Geturl,val+'/Products')
   
     
   }
 }
+
+
+// .pipe(catchError((err)=>{
+//   return throwError(err.message || 'error Happen')
+// }))

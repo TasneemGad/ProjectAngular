@@ -3,7 +3,7 @@ namespace webAPI.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class shop : DbMigration
+    public partial class ss : DbMigration
     {
         public override void Up()
         {
@@ -92,7 +92,7 @@ namespace webAPI.Migrations
                         Description = c.String(),
                         Image = c.String(),
                         Price = c.Int(nullable: false),
-                        ProductDetailsID = c.Int(nullable: false),
+                        Quantity = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID);
             
