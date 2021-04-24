@@ -136,9 +136,15 @@
   <ItemGroup>
     <Compile Include="Controller\AccountController.cs" />
     <Compile Include="Controller\ProductsController.cs" />
+<<<<<<< HEAD
+    <Compile Include="Migrations\202104220047129_ss.cs" />
+    <Compile Include="Migrations\202104220047129_ss.Designer.cs">
+      <DependentUpon>202104220047129_ss.cs</DependentUpon>
+=======
     <Compile Include="Migrations\202104222040377_sec.cs" />
     <Compile Include="Migrations\202104222040377_sec.Designer.cs">
       <DependentUpon>202104222040377_sec.cs</DependentUpon>
+>>>>>>> dd7a7fa89fe4259342208520ec3ac71869b91b7b
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\context.cs" />
@@ -161,8 +167,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <EmbeddedResource Include="Migrations\202104220047129_ss.resx">
+      <DependentUpon>202104220047129_ss.cs</DependentUpon>
+=======
     <EmbeddedResource Include="Migrations\202104222040377_sec.resx">
       <DependentUpon>202104222040377_sec.cs</DependentUpon>
+>>>>>>> dd7a7fa89fe4259342208520ec3ac71869b91b7b
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -180,7 +191,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>58842</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58842/</IISUrl>
+          <IISUrl>http://localhost:6539/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

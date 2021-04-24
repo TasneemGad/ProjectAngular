@@ -270,12 +270,12 @@ D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\bin\Syste
 D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\bin\System.Web.Http.xml
 D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\bin\System.Web.Http.Owin.xml
 D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.csprojAssemblyReference.cache
 D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.csproj.CoreCompileInputs.cache
 D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.csproj.CopyComplete
 D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.dll
 D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.pdb
-D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.Migrations.shop.resources
+D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.csprojAssemblyReference.cache
+D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.Migrations.ss.resources
 D:\ITI COURSES\Angular\Project Edit\file2\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.csproj.GenerateResource.cache
 D:\Angular\Proj\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.csprojAssemblyReference.cache
 D:\Angular\Proj\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.dll

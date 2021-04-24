@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 using FluentAssertions.Common;
+>>>>>>> dd7a7fa89fe4259342208520ec3ac71869b91b7b
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
@@ -43,7 +46,7 @@ namespace webAPI
                 new { id = RouteParameter.Optional });
             config.Routes.MapHttpRoute(
                 "Addetion", "add/{controller}/{action}/{id}",
-                new { id = RouteParameter.Optional });
+                new { id = RouteParameter.Optional , action = "DefaultAction" });
             app.UseWebApi(config);
         }
    
