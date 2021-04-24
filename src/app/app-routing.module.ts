@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductComponent } from './product/product.component';
 import { RegisterComponent } from './register/register.component';
+/* import {DashboardComponent} from './dashboard/dashboard.component' */
 
 const routes: Routes = [
   {path:'',redirectTo:'/Home',pathMatch:'full'},
@@ -18,6 +19,7 @@ const routes: Routes = [
   , children:[{path:"Product" , component:ProductComponent}]},
   {path:"Order" , component:OrderComponent},
   {path:"Cart" , component:CartComponent},
+<<<<<<< HEAD
   {path:"Details" , component:ProductDetailsComponent},
 
    {path:"admin/Product" ,component:AdminProductComponent},
@@ -26,6 +28,12 @@ const routes: Routes = [
   {path:"Login" , component:LoginComponent},
   {path:'**',component:PageNotFoundComponent},
 
+=======
+  {path:'' ,redirectTo:'login' ,pathMatch:'full'},
+  {path:"Register" , component:RegisterComponent , data:{title:'Add User Page'}},
+  {path:"Login" , component:LoginComponent , data:{title:'Login Page'}},
+/*   {path:"Dashboard" ,component:DashboardComponent , data:{title:'Dashboard Page'}}, */
+>>>>>>> dd7a7fa89fe4259342208520ec3ac71869b91b7b
 ];
 
 @NgModule({

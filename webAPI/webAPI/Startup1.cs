@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+using FluentAssertions.Common;
+>>>>>>> dd7a7fa89fe4259342208520ec3ac71869b91b7b
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
@@ -17,12 +21,16 @@ namespace webAPI
     public class Startup1
     {
         public void Configuration(IAppBuilder app)
-        {
+    { 
+
+     
+        /////////////////////////////////////////////////////////;
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=316888
             app.UseCors(CorsOptions.AllowAll);
             //make token be middelware
             app.UseOAuthAuthorizationServer(new OAuthAuthorizationServerOptions()
             {
+                //services.
                 TokenEndpointPath = new PathString("/login"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(60),
                 AllowInsecureHttp = true,
@@ -41,6 +49,7 @@ namespace webAPI
                 new { id = RouteParameter.Optional , action = "DefaultAction" });
             app.UseWebApi(config);
         }
+   
     }
     internal class TokenCreate : OAuthAuthorizationServerProvider
     {

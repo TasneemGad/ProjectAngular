@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,Validators } from '@angular/forms';
+import { LoginService } from '../Services/Login.service';
+import { IRegister } from '../Shared_Interfaces/IRegister';
 import { ConfirmPasswordValidator } from '../Validations/ConfirmPassword.validator';
+
 
 @Component({
   selector: 'app-register',
@@ -8,20 +11,42 @@ import { ConfirmPasswordValidator } from '../Validations/ConfirmPassword.validat
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-  registerForm=this.fb.group({
-    userName :['',[Validators.required]],
+  data = false;       
+  massage:string=""; 
+  registerForm:any;
+
+  constructor(private fb:FormBuilder ,private LoginServices:LoginService) { }
+
+  ngOnInit(){
+  
+    this.registerForm =this.fb.group({
+    Name :['',[Validators.required]],
     password:['',[Validators.required,Validators.minLength(6)]],
     confirmPassword:['',[Validators.required]]
-  },{validators:[ConfirmPasswordValidator]})
-
-  constructor(private fb:FormBuilder) { }
-
-  ngOnInit(): void {
+  },{validators:[ConfirmPasswordValidator]});
+  
   }
-
-  get userName ()
+  
+  onFormSubmit(x:any)    
+  {    
+    const user = this.registerForm.value;    
+    this.Createemployee(user);    
+  }    
+  Createemployee(register:IRegister)    
+  {    
+  this.LoginServices.CreateUser(register).subscribe(    
+    ()=>    
+    {    
+      this.data = true;    
+      this.massage = 'Data saved Successfully';  
+      console.log ("Data saved Successfully") ;
+      this.registerForm.reset();    
+    });    
+  } 
+ 
+  get Name ()
   {
-    return this.registerForm.get('userName');
+    return this.registerForm.get('Name');
   }
   
   get password ()
@@ -32,5 +57,5 @@ export class RegisterComponent implements OnInit {
   get confirmPassword ()
   {
     return this.registerForm.get('confirmPassword');
-  }
+  } 
 }
