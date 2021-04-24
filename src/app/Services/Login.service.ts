@@ -16,7 +16,7 @@ export class LoginService {
   constructor(private http : HttpClient) {   
 
     this.UrlReg = "http://localhost:58842/api/Account"; 
-    this.UrlLog = "http://localhost:58842/Login/";
+    this.UrlLog = "http://localhost:58842/login";
 
     const headerSettings: {[name: string]: string | string[]; } = {};  
     this.header = new HttpHeaders(headerSettings);  
@@ -24,7 +24,13 @@ export class LoginService {
    Login(model : any){ 
     console.log("login"); 
    /*  debugger;  */   
-   return this.http.post<any>(this.UrlLog,model,{ headers: this.header});  
+   console.log(this.header);
+   console.log(model)
+   var reqHeader = new HttpHeaders({ 
+     'Content-Type': 'application/x-www-form-urlencoded','No-Auth':'True' })
+
+   
+   return this.http.post(this.UrlLog,model,{ headers: reqHeader});  
  
   }   
    CreateUser(register:IRegister)  

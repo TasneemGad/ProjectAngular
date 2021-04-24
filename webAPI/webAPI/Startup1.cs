@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity;
+using FluentAssertions.Common;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
 using Microsoft.Owin.Cors;
@@ -17,12 +18,16 @@ namespace webAPI
     public class Startup1
     {
         public void Configuration(IAppBuilder app)
-        {
+    { 
+
+     
+        /////////////////////////////////////////////////////////;
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=316888
             app.UseCors(CorsOptions.AllowAll);
             //make token be middelware
             app.UseOAuthAuthorizationServer(new OAuthAuthorizationServerOptions()
             {
+                //services.
                 TokenEndpointPath = new PathString("/login"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(60),
                 AllowInsecureHttp = true,
@@ -41,6 +46,7 @@ namespace webAPI
                 new { id = RouteParameter.Optional });
             app.UseWebApi(config);
         }
+   
     }
     internal class TokenCreate : OAuthAuthorizationServerProvider
     {

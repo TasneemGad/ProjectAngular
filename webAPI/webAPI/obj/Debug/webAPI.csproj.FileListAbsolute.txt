@@ -557,3 +557,6 @@ D:\ITI_9Month\Angular\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.dll
 D:\ITI_9Month\Angular\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.pdb
 D:\ITI_9Month\Angular\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.Migrations.sec.resources
 D:\ITI_9Month\Angular\ProjectAngular\webAPI\webAPI\obj\Debug\webAPI.csproj.GenerateResource.cache
+D:\ITI_9Month\Angular\ProjectAngular\webAPI\webAPI\bin\FluentAssertions.dll
+D:\ITI_9Month\Angular\ProjectAngular\webAPI\webAPI\bin\FluentAssertions.pdb
+D:\ITI_9Month\Angular\ProjectAngular\webAPI\webAPI\bin\FluentAssertions.xml

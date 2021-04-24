@@ -15,7 +15,6 @@ export class LoginComponent implements OnInit {
     LoginForm=this.fb.group({
     Name :['',[Validators.required]],
     password:['',[Validators.required,Validators.minLength(6)]],
-    grant_type:['']
     }) 
 
     model : any={};    
@@ -30,18 +29,24 @@ export class LoginComponent implements OnInit {
   login(y:any){ 
     console.log("login");   
   /*   debugger;  */   
-    this.LoginService.Login(this.model).subscribe(    
+  var userData = "UserName=" + this.LoginForm.value.Name + "&Password=" + this.LoginForm.value.password + "&grant_type=password";
+  console.log(this.LoginForm.value);
+  console.log(userData);
+    this.LoginService.Login(userData).subscribe(    
       data => {    
    /*      debugger;   */  
-        if(data.Status=="Success")    
-        {       
-          this.router.navigate(['/Home']);    
-        /*   debugger; */    
-        }    
-        else{    
-          this.errorMessage = data.Message;    
-        }    
-      },    
+        // if(data.Status=="Success")    
+        // {       
+           //this.router.navigate(['/Home']);    
+        // /*   debugger; */    
+        // }    
+        // else{    
+        //   this.errorMessage = data.Message;    
+        // }  
+        console.log(data);  // contains object contain token and expire date
+        this.router.navigate(['/Home']);
+      }, 
+      
       error => {    
         this.errorMessage = error.message;    
       });    
