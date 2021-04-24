@@ -12,13 +12,13 @@ cartList:ICart[]=[]
   constructor(private services : CartService) { }
 
   
-  getAllCart()
-  {
-    console.log("ok")
-   return this.services.getProduct().subscribe(data=>{this.cartList=data})
-  }
+  // getAllCart()
+  // {
+  //   console.log("ok")
+  //  return this.services.getProduct().subscribe(data=>{this.cartList=data})
+  // }
   ngOnInit(): void {
-    this.getAllCart();
+    //this.getAllCart();
   }
 
 }

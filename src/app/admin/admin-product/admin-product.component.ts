@@ -33,7 +33,6 @@ export class AdminProductComponent implements OnInit {
 
     return this.services.postProduct(this.productDa).subscribe(data => {
       this.productDa = data
-      //console.log(this.productDa)
       console.log("Added")
 
     })

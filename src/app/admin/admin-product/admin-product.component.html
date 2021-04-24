@@ -18,8 +18,16 @@
     </div>
     <div class="col-6">
       
-      <label for="inputAddress2" class="form-label" >Image</label>
-      <input type="text" class="form-control" id="inputAddress2" name="txtImage"  #des="ngModel" [(ngModel)]="productDa.Image" >
+      <label for="inputAddress2" class="form-label" >Image Url</label>
+      <input type="url" value="http://localhost:6539/" class="form-control"  required [class.is-invalid]="des.invalid &&des.touched"
+       name="txtImage"  #des="ngModel" [(ngModel)]="productDa.Image" pattern="(www|http:|https:)+[^\s]+[\w]" >
+       <div *ngIf="des.errors && des.touched">
+
+        <small class="text-danger" *ngIf="des.errors.required">  required</small>
+
+        <small class="text-danger" *ngIf="des.errors.pattern">Url</small>
+
+      </div>
     </div>
     <div class="col-md-6">
       <label for="inputCity" class="form-label">Price</label>

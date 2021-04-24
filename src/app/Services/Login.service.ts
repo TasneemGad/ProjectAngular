@@ -15,15 +15,14 @@ export class LoginService {
   header : any;  
   constructor(private http : HttpClient) {   
 
-    this.UrlReg = "http://localhost:58842/api/Account"; 
-    this.UrlLog = "http://localhost:58842/login";
+    this.UrlReg = "http://localhost:6539/api/Account"; 
+    this.UrlLog = "http://localhost:6539/login";
 
     const headerSettings: {[name: string]: string | string[]; } = {};  
     this.header = new HttpHeaders(headerSettings);  
   }  
    Login(model : any){ 
     console.log("login"); 
-   /*  debugger;  */   
    console.log(this.header);
    console.log(model)
    var reqHeader = new HttpHeaders({ 
@@ -37,6 +36,6 @@ export class LoginService {
    { 
     console.log("Saved"); 
     const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };  
-    return this.http.post<IRegister[]>(this.UrlReg+'/registration/' , register, httpOptions)  
+    return this.http.post<IRegister[]>(this.UrlReg+'/Register/' , register, httpOptions)  
    }  
 }  
