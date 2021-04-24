@@ -27,23 +27,13 @@ export class LoginComponent implements OnInit {
     sessionStorage.clear();    
   } 
   login(y:any){ 
-    console.log("login");   
-  /*   debugger;  */   
+    console.log("login");     
   var userData = "UserName=" + this.LoginForm.value.Name + "&Password=" + this.LoginForm.value.password + "&grant_type=password";
   console.log(this.LoginForm.value);
   console.log(userData);
     this.LoginService.Login(userData).subscribe(    
-      data => {    
-   /*      debugger;   */  
-        // if(data.Status=="Success")    
-        // {       
-           //this.router.navigate(['/Home']);    
-        // /*   debugger; */    
-        // }    
-        // else{    
-        //   this.errorMessage = data.Message;    
-        // }  
-        console.log(data);  // contains object contain token and expire date
+      data => {      
+        console.log(data);  
         this.router.navigate(['/Home']);
       }, 
       
