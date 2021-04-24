@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
   errorMessage: string = "";
   constructor(private fb: FormBuilder, private router: Router, private LoginService: LoginService) { }
 
+<<<<<<< HEAD
   ngOnInit() {
     sessionStorage.removeItem('UserName');
     sessionStorage.clear();
@@ -36,6 +37,20 @@ export class LoginComponent implements OnInit {
 
 
         console.log(data);
+=======
+  ngOnInit() {    
+    sessionStorage.removeItem('UserName');    
+    sessionStorage.clear();    
+  } 
+  login(y:any){ 
+    console.log("login");     
+  var userData = "UserName=" + this.LoginForm.value.Name + "&Password=" + this.LoginForm.value.password + "&grant_type=password";
+  console.log(this.LoginForm.value);
+  console.log(userData);
+    this.LoginService.Login(userData).subscribe(    
+      data => {      
+        console.log(data);  
+>>>>>>> f6889b7601a8ab20fc895c25a1da7e809992d629
         this.router.navigate(['/Home']);
       },
 
