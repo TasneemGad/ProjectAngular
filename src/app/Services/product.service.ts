@@ -12,7 +12,7 @@ export class ProductService {
 
   constructor(private httpGet: HttpClient) { }
 
-   getProduct(): Observable<IProduct[]> {
+  getProduct(): Observable<IProduct[]> {
 
     console.log("Done")
     return this.httpGet.get<IProduct[]>(this.Geturl)
@@ -25,6 +25,10 @@ export class ProductService {
 
     console.log("Done")
     return this.httpGet.post<IProduct>(this.Geturl, product)
+
+  }
+  getItemId(id: number) {
+    return this.httpGet.get<IProduct>(this.Geturl + "/" + id)
 
   }
 

@@ -1,37 +1,39 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<div class="container register-form">
-    <div class="form">
-        <div class="note">
-            <p>Login Form</p>
-        </div>
-        <form [formGroup]="LoginForm" (ngSubmit)="login(LoginForm.value)">
-            <!--   <div class="form-content" [formGroup]="LoginForm"  (ngSubmit)="login(f)" #f> -->
-            <div class="form-group">
-                <label>User Name</label>
-                <input formControlName="Name" type="text" class="form-control" placeholder="Your Name *" value="" />
-                <!--    <div *ngIf="userName.invalid && userName.touched">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css" integrity="sha512-NicFTMUg/LwBeG8C7VG+gC4YiiRtQACl98QdkmfsLy37RzXdkaUAuPyVMND0olPP4Jn8M/ctesGSB2pgUBDRIw==" crossorigin="anonymous" />
+
+<div class="container" >
+    <!-- <img src="/assets/img1.jfif" style="background-size: cover;" class="item" > -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <form onsubmit="event.preventDefault()" class="box" [formGroup]="LoginForm" (ngSubmit)="login(LoginForm.value)">
+                    <h1>Login</h1>
+                    <p class="text-muted"> Please enter your login and password!</p> 
+                    <input type="text" name="" placeholder="Username" formControlName="Name"> 
+                         <!-- <div *ngIf="userName.invalid && userName.touched">
                                     <small class="text-danger" *ngIf="userName.errors.required">User Name is required</small>
                                 </div> -->
+                    <input formControlName="password" type="password" name="" placeholder="Password"> 
+                    <div *ngIf="password.invalid && password.touched">
+                        <small class="text-danger" *ngIf="password.errors.required" style="font-size: 15px;">Password is required</small>
+                    </div>
+                    <a class="forgot text-muted" href="#">Forgot password?</a> 
+                    <div>
+                        <p style="color:#E92626;font-size:20px;font-weight:normal" Class="success">
+                            {{errorMessage}}
+                        </p>
+                    </div>
+        
+                    <input type="submit" name="" value="Login" >
+                    <div class="col-md-12">
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label>Password</label>
-                <input formControlName="password" type="text" class="form-control" placeholder="Your Password *" value="" />
-                <div *ngIf="password.invalid && password.touched">
-                    <small class="text-danger" *ngIf="password.errors.required">Password is required</small>
-                </div>
-            </div>
-
-            <div>
-                <p style="color:#E92626;font-size:20px;font-weight:normal" Class="success">
-                    {{errorMessage}}
-                </p>
-            </div>
-
-            <button type="submit" class="btnSubmit">Login</button>
-        </form>
+        </div>
     </div>
 </div>
-<!-- <app-dashboard></app-dashboard> -->

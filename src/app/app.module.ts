@@ -15,9 +15,10 @@ import { PaymentComponent } from './payment/payment.component';
 import { OrderComponent } from './order/order.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import{HttpClientModule} from '@angular/common/http';
-import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbPaginationModule, NgbAlertModule, NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
 import { AdminProductComponent } from './admin/admin-product/admin-product.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FilterComponent } from './filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     OrderComponent,
     AdminProductComponent,
     PageNotFoundComponent,
+    FilterComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HttpClientModule,
     NgbPaginationModule,
     NgbAlertModule,
-    FormsModule
+    FormsModule,
+    NgbCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

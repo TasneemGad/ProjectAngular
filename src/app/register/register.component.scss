@@ -1,30 +1,125 @@
-.note
-{
-    margin-top: 3%;
+
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+    
+  }
+  
+  body {
+    // background: #15191d;
+    // background-image: url('/assets/img1.jfif');
+    // background: linear-gradient(to right, #0062E6, #33AEFF);
+    
+  }
+  
+  .card-signin {
+    border: 0;
+    border-radius: 1rem;
+    background-color:rgb(17, 15, 17);
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  
+  .card-signin .card-img-left {
+    width: 45%;
+    /* Link to your background image using in the property below! */
+    background: scroll center url('/assets/img7.jpg');
+    background-size: cover;
+  }
+  
+  .card-signin .card-body {
+    padding: 2rem;
+  }
+  
+  .form-signin {
+    width: 100%;
+  }
+  
+  .form-signin .btn {
+    
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
     text-align: center;
-    height: 80px;
-    background: -webkit-linear-gradient(left, #778491,#778491);
+    border: 2px solid brown;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+  }
+  .form-signin .btn:hover {
+    background: brown
+  }
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #BD3518
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+    color: #fff
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.2s
+}
+
+.social-circle i {
     color: #fff;
-    font-weight: bold;
-    line-height: 80px;
+    transition: all 0.8s;
+    transition: all 0.8s
 }
-.form-content
-{
-    padding: 5%;
-    border: 1px solid #ced4da;
-    margin-bottom: 2%;
-    margin-top: 2%;
-}
-.form-control{
-    border-radius:1.5rem;
-}
-.btnSubmit
-{
-    border:none;
-    border-radius:1.5rem;
-    padding: 1%;
-    width: 20%;
-    cursor: pointer;
-    background: #0062cc;
-    color: #fff;
-}
+

@@ -1,1 +1,47 @@
-<p>product-details works!</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- 
+<div style="display:flex;  flex-wrap:wrap ; margin-left: 50px; margin-top: 60px;">
+
+    <div class="card"  style="width: 18rem; height:500px ; margin-bottom:10px ; margin-left:10px">
+        <img class="card-img-top" src="{{listid.Image}}" style="width: 100%; height: 200px;">
+        <div class="card-body">
+            <h5 class="card-title">{{listid.Name}}</h5>
+            <p class="card-text"> {{listid.Description}}</p>
+            <p class="card-text">{{listid.Price | currency:'USD' :true}}</p>
+            <a routerLink="/Cart" class="btn btn-dark float-right ">
+                <i class="fa fa-shopping-cart" style="font-size:20px ;"></i>
+             </a>
+
+
+        </div>
+    </div>
+    </div> -->
+
+
+
+
+
+
+
+    <div class="card mb-3" style="max-width: 600px;  margin-left: 50px; margin-top: 60px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img class="card-img-top" src="{{listid.Image}}" style="width: 100%; height: 200px;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+            <h5 class="card-title">{{listid.Name}}</h5>
+            <span>Brand</span>
+            <span class="card-text">{{listid.Brand}}</span>
+            <p class="card-text">{{listid.Storage}}</p>
+            <p class="card-text">{{listid.RAM}}</p>
+            <p class="card-text">{{listid.Size}}</p>
+            <p class="card-text">{{listid.Price | currency:'USD' :true}}</p>
+            <p class="card-text">{{listid.Discount}}</p>
+            <a routerLink="/Cart" class="btn btn-dark float-right ">
+                <i class="fa fa-shopping-cart" style="font-size:20px ;"></i>
+             </a>
+            </div>
+          </div>
+        </div>
+      </div>
