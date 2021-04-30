@@ -32,13 +32,12 @@ export class LoginService {
    console.log(model)
    var reqHeader = new HttpHeaders({ 
      'Content-Type': 'application/x-www-form-urlencoded','No-Auth':'True' })
-
    return this.http.post(this.UrlLog,model,{ headers: reqHeader});
    
   //  .pipe(map(userInfo => {
-  //       localStorage.setItem('token', userInfo.token)
-  //       this.currentUser = userInfo.
-  //       return userInfo.user
+  //       localStorage.setItem('token', userInfo)
+  //       this.currentUser = userInfo.model
+  //       return userInfo
   //     }))
   
 

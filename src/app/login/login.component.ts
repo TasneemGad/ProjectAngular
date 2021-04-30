@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-
 import { Router } from '@angular/router';
 import { LoginService } from '../Services/Login.service';
 import { FormsModule } from '@angular/forms';
@@ -33,8 +32,6 @@ export class LoginComponent implements OnInit {
     console.log(userData);
     this.LoginService.Login(userData).subscribe(
       data => {
-
-
         console.log(data);
         this.router.navigate(['/Home']);
       },

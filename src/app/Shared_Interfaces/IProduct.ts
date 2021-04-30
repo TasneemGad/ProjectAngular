@@ -19,6 +19,7 @@ export class IProduct {
         Size: number
         Price: number
         Discount: number
-       cat:string
+        cat:string
+        CategoryId:number
 
 }

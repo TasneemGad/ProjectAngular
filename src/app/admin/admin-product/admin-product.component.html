@@ -3,20 +3,20 @@
 
 <ng-template #appear>
 <form class="row g-3" style="margin: 10px;" #form="ngForm" (ngSubmit)="onSubmit()">
-  <p>Form value: {{ form.value | json }}</p>
-    <div class="col-md-6">
+  <!-- <p>Form value: {{ form.value | json }}</p> -->
+    <div class="col-md-5">
       <label for="inputEmail4" class="form-label" hidden>ID</label>
       <input type="text" class="form-control" id="inputEmail4" hidden>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5">
       <label for="inputPassword4" class="form-label">Name</label>
       <input type="text" class="form-control"   name="txtName"  #name="ngModel" [(ngModel)]="productDa.Name" >
     </div>
-    <div class="col-6">
+    <div class="col-5">
       <label for="inputAddress" class="form-label">Description</label>
       <input type="text" class="form-control" id="inputAddress"  name="txtDescription"  #des="ngModel" [(ngModel)]="productDa.Description">
     </div>
-    <div class="col-6">
+    <div class="col-5">
       
       <label for="inputAddress2" class="form-label" >Image Url</label>
       <input type="url" value="http://localhost:6539/" class="form-control"  required [class.is-invalid]="des.invalid &&des.touched"
@@ -29,15 +29,21 @@
 
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5">
       <label for="inputCity" class="form-label">Price</label>
       <input type="text" class="form-control" id="inputCity" name="txtPrice"  #des="ngModel" [(ngModel)]="productDa.Price" >
     </div>
     
-    <div class="col-md-6">
+    <div class="col-md-5">
       <label for="inputZip" class="form-label">Quantity</label>
       <input type="text" class="form-control" id="inputZip">
     </div>
+    
+    <div class="col-md-5">
+      <label for="inputCity" class="form-label">Category Id</label>
+      <input type="text" class="form-control" id="inputCity" name="txtPrice"  #des="ngModel" [(ngModel)]="productDa.CategoryId" >
+    </div>
+    
   
     <div class="col-12">
       <button type="submit" class="btn btn-primary   float-center" style="margin: 10px;">Save</button>
