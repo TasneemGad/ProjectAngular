@@ -35,12 +35,12 @@ export class HeaderComponent implements OnInit  {
     console.log("ok")
     return this.services.getProduct().subscribe(data => { this.ProductList = data  })
   }
-  getCategory2()
-  {
-      return this.catServices.getCtegory().subscribe(data=>{this.categoryList=data});
-  }
+  // getCategory2()
+  // {
+  //     return this.catServices.getCtegory().subscribe(data=>{this.categoryList=data});
+  // }
   ngOnInit(): void {
-   this.getCategory2()
+  //  this.getCategory2()
  this.getCategory();
     this.getAllProduct();
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CartService } from '../Services/cart.service';
 import { ICart } from '../Shared_Interfaces/ICart';
 
@@ -9,16 +10,23 @@ import { ICart } from '../Shared_Interfaces/ICart';
 })
 export class CartComponent implements OnInit {
 cartList:ICart[]=[]
-  constructor(private services : CartService) { }
+  constructor(private services : CartService, private router:Router) { }
 
-  
-  // getAllCart()
-  // {
-  //   console.log("ok")
-  //  return this.services.getProduct().subscribe(data=>{this.cartList=data})
-  // }
+    getAllCart() {
+    console.log("HH")
+    return this.services.getCarts().subscribe(data => { 
+      this.cartList = data 
+      console.log("Added")
+    })
+  }
+
+  GoToOrder()
+  {
+    this.router.navigate(['/Order']);
+  }
+
   ngOnInit(): void {
-    //this.getAllCart();
+    this.getAllCart();
   }
 
 }

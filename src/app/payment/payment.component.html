@@ -1,65 +1,60 @@
 <div class="container py-5">
-    <!-- For demo purpose -->
     <div class="row mb-4">
         <div class="col-lg-8 mx-auto text-center">
-            <h1 class="display-6">Bootstrap Payment Forms</h1>
+            <p>
+                <ngb-alert [dismissible]="true" style="background-color: rgb(148, 218, 148);" *ngIf="flag">
+                  <strong>Success Payment! Thank you for shopping in our site, Delivery in two day  </strong> <img width="30px" height="30px" src="/assets/OK.jpg" alt="error">
+                </ngb-alert>
+              </p>
         </div>
-    </div> <!-- End -->
-    <div class="row">
-        <div class="col-lg-6 mx-auto">
-            <div class="card ">
+    </div> 
+
+    <form class="row g-3" style="margin: 0 100px 0 200px;" #form="ngForm" (ngSubmit)="onSubmitPayment()">
+      <div class="row">
+        <div class="col-lg-6 mx-auto" >
+            <div class="card "  style=" background-color: black; ">
                 <div class="card-header">
-                    <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
-                        <!-- Credit card form tabs -->
-                        <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
-                            <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Credit Card </a> </li>
-                            
-                        </ul>
-                    </div> <!-- End -->
-                    <!-- Credit card form content -->
+                        <h4  style="color: white">Payment by Credit Card</h4>
+                        <hr  style="color:whitesmoke;">
                     <div class="tab-content">
-                        <!-- credit card info-->
                         <div id="credit-card" class="tab-pane fade show active pt-3">
-                            <form role="form" onsubmit="event.preventDefault()">
+                                <!-- {{form.value |json}} -->
                                 <div class="form-group"> <label for="username">
-                                        <h6>Card Owner</h6>
-                                    </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> 
-                                  </div>
+                                        <h6 style="color: white">Card Owner</h6>
+                                    </label> <input type="text" [class.is-invalid]="Name.invalid && Name.touched" name="Name" required #Name="ngModel" [(ngModel)]="makePayment.Name" placeholder="Card Owner Name" required class="form-control "> 
+                                    <small  class="text-danger" [class.d-none]="Name.untouched ||Name.valid">Name is required</small>
+                                </div>
                                 <div class="form-group"> <label for="cardNumber">
-                                        <h6>Card number</h6>
+                                        <h6 style="color: white">Card number</h6>
                                     </label>
-                                    <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                                    <div class="input-group"> <input type="text" [class.is-invalid]="CardNumber.invalid && CardNumber.touched" required name="CardNumber"  #CardNumber="ngModel" [(ngModel)]="makePayment.CardNumber" placeholder="Valid card number" class="form-control " required>
+                                    <small  class="text-danger" [class.d-none]="CardNumber.untouched ||CardNumber.valid">Name is required</small>
                                         <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-8">
                                         <div class="form-group"> <label><span class="hidden-xs">
-                                                    <h6>Expiration Date</h6>
+                                                    <h6 style="color: white">Expiration Date</h6>
                                                 </span></label>
-                                            <div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+                                            <div class="input-group"> <input type="number" required placeholder="MM"class="form-control" required> <input type="number" placeholder="YY" [class.is-invalid]="ExpirationDate.invalid && ExpirationDate.touched" name="ExpirationDate"  #ExpirationDate="ngModel" [(ngModel)]="makePayment.ExpirationDate" class="form-control" required> </div>
+                                            <small  class="text-danger" [class.d-none]="ExpirationDate.untouched ||ExpirationDate.valid">Name is required</small>
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
-                                                <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
-                                            </label> <input type="text" required class="form-control"> </div>
-                                    </div>
+                                                <h6 style="color: white">CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                            </label> <input type="text" [class.is-invalid]="CVV.invalid && CVV.touched" required name="CVV"  #CVV="ngModel" [(ngModel)]="makePayment.CVV" required class="form-control"> </div>
+                                            <small  class="text-danger" [class.d-none]="CVV.untouched ||CVV.valid">Name is required</small>
+                                        </div>
                                 </div>
-                                <div class="card-footer"> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+                                <div class="card-footer"> <button type="submit" style="background-color: white; color:grey; font-weight: bold;" class="subscribe btn btn-primary btn-block shadow-sm" (click)="ConfirmPayment()" > Confirm Payment </button>
                                 </div>
-                            </form>
                         </div>  
                      </div>
                </div>
              </div>
          </div>
      </div>
+    </form>
   </div>
-
-
-
-                   
-          
- 
-

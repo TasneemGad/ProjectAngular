@@ -1,0 +1,26 @@
+
+<div style="width:300px ; height:200px ; margin: 4rem;">
+
+    <table class="table  table-bordered" style="margin: 50px; width: 700px; " >
+       <thead class="table-dark">
+         <tr>
+           <th scope="col">Name</th>
+           <th scope="col">Image</th>
+           <th scope="col">Quantity</th>
+           <th scope="col">Price</th>
+         </tr>
+       </thead>
+
+      <tbody *ngFor="let p of cartList">
+         <tr>
+           <td>{{p.productName}}</td>
+           <td>{{p.Image}}</td>
+           <td>{{p.Quantities}}</td>
+           <td>{{p.price | currency:'USD' :true}}</td>
+          </tr>
+       </tbody>
+     </table> 
+
+     <div >
+      <button type="submit" (click)="GoToOrder()" class="btn btn-primary float-center" style="background-color: black; float: right;">OK, Make Order -> </button>
+    </div>
